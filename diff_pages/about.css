@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Sigmar+One&display=swap');
+img {
+   border-radius: 50%;
+   max-width: 35%;
+
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+  }
+  .aboutclass{
+    font-family: 'Arial' ;
+    font-size:  20px;
+    font-style: bold;
+    font-weight: 800;
+    text-align: center;
+    color: #07306E;  
+  }
+  h1{
+    font-family: 'Arial' ;
+    font-size:  100px;
+    font-style: bold;
+    font-weight: 800;
+    text-align: center;
+    color: #07306E;  
+  }
+  body {
+    background: #ccc;
+}
+a {
+  font-family: 'Bungee Outline', cursive;
+  font-size:  60px;
+  font-style: bold;
+  font-weight: 800;
+  text-align: center;
+  text-transform: capitalize;
+  color: 	#000000;  
+}
+.section{
+  background-color: #ccc;
+  border:none;
+
+}
+nav {
+  text-align: center;
+  /*spacing between the buttons*/
+  letter-spacing: 30px;
+  margin-top: 1em;
+}
+
+/*letter*/
+.letter-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.animated-mail {
+  position: absolute;
+  height: 310px;
+  width: 600px;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+}
+.animated-mail .body {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 300px 600px;
+  border-color: transparent transparent 	#344472 transparent;
+  z-index: 2;
+}
+.animated-mail .top-fold {
+  position: absolute;
+  top: 10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 150px 300px 0 300px;
+  -webkit-transform-origin: 50% 0%;
+  -webkit-transition: transform 0.4s 0.4s, z-index 0.2s 0.4s;
+  -moz-transform-origin: 50% 0%;
+  -moz-transition: transform 0.4s 0.4s, z-index 0.2s 0.4s;
+  transform-origin: 50% 0%;
+  transition: transform 0.4s 0.4s, z-index 0.2s 0.4s;
+  border-color:#8794ac transparent transparent transparent;
+  z-index:2;
+}
+.animated-mail .back-fold {
+  position: absolute;
+  bottom: 0;
+  width: 600px;
+  height: 300px;
+  background: #8794ac ;
+  z-index: 0;
+}
+.animated-mail .left-fold {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 150px 0 150px 300px;
+  border-color: transparent transparent transparent 	#000000;
+  z-index: 2;
+}
+.animated-mail .letter {
+  left: 60px;
+  bottom: 0px;
+  position: absolute;
+  width: 480px;
+  height: 180px;
+  background: white;
+  z-index: 1;
+  overflow: hidden;
+  -webkit-transition: 0.4s 0.2s;
+  -moz-transition: 0.4s 0.2s;
+  transition: 0.4s 0.2s;
+}
+.animated-mail .letter .letter-border {
+  height: 10px;
+  width: 100%;
+  background: repeating-linear-gradient(-45deg,	#000000, #000000 8px, transparent 8px, transparent 18px);
+}
+.animated-mail .letter .letter-title {
+  margin-top: 10px;
+  margin-left: 5px;
+  height: 30px;
+  width: 40%;
+  background: #46c0ce;
+}
+.animated-mail .letter .letter-context {
+  margin-top: 10px;
+  margin-left: 4px;
+  height: 30px;
+  width: 100%;
+  background: #white;
+}
+.animated-mail .letter .letter-stamp {
+  margin-top: 90px;
+  margin-left: 360px;
+  border-radius: 100%;
+  height: 90px;
+  width: 90px;
+  background: #cb5a5e;
+  opacity: 0.3;
+}
+
+.shadow {
+  position: absolute;
+  top: 600px;
+  left: 50%;
+  width: 1200px;
+  height: 90px;
+  transition: 0.4s;
+  transform: translateX(-50%);
+  -webkit-transition: 0.4s;
+  -webkit-transform: translateX(-50%);
+  -moz-transition: 0.4s;
+  -moz-transform: translateX(-50%);
+  border-radius: 100%;
+  background: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+.letter-image:hover .animated-mail {
+  transform: translateY(150px);
+  -webkit-transform: translateY(150px);
+  -moz-transform: translateY(150px);
+}
+.letter-image:hover .animated-mail .top-fold {
+  transition: transform 0.4s, z-index 0.2s;
+  transform: rotateX(180deg);
+  -webkit-transition: transform 0.4s, z-index 0.2s;
+  -webkit-transform: rotateX(180deg);
+  -moz-transition: transform 0.4s, z-index 0.2s;
+  -moz-transform: rotateX(180deg);
+  z-index: 0;
+}
+.letter-image:hover .animated-mail .letter {
+  height: 480px;
+}
+.letter-image:hover .shadow {
+  width: 750px;
+}
+
+
+/*styling for the social media icons */
+.footer {
+  position: fixed;
+  text-align: center;
+  width: 50%;
+  bottom: 10px;
+  /*adding the social media icons to the right*/
+  right: 50px;
+}
+.socials {
+ font-family: 'Arial' ;
+ float: right;
+ padding: 10px;
+ font-size:  70px;
+ font-style: bold;
+ font-weight: 800;
+ text-align: center;
+ text-transform: capitalize;
+ color: 	#000000; 
+}
+

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Sigmar+One&display=swap');
+h1{
+  font-family: 'Boogaloo', cursive; 
+  font-size: 100px;
+  font-weight: 800;
+  text-align: center;
+  text-transform:capitalize;
+  color: #344472;
+  margin-top:3rem;
+  }
+a {
+  font-family: 'Bungee Outline', cursive;
+  font-size:  60px;
+  font-style: bold;
+  font-weight: 800;
+  text-align: center;
+  text-transform: capitalize;
+  color: 	#000000; 
+}
+.description{
+  font-family: 'Arial' ;
+  font-size:  25px;
+  font-style: bold;
+  font-weight: 800;
+  text-align: center;
+  color: #344472; 
+}
+nav {
+    text-align: center;
+    /*spacing between the buttons*/
+    letter-spacing: 30px;
+}
+.section{
+  background-color: #ccc;
+  border:none;
+
+}
+body {
+    background: 	#ccc;
+}
+.footer {
+     position: fixed;
+     text-align: center;
+     width: 50%;
+     bottom: 10px;
+ }
+ .socials {
+    font-family: 'Arial' ;
+    float: right;
+    padding: 20px;
+    font-size:  100px;
+    font-style: bold;
+    font-weight: 800;
+    text-align: center;
+    text-transform: capitalize;
+    color: #07306E; 
+ }
+ /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 17%;
+    padding: 20px;
+  }
+  
+  /* Clear floats after image containers */
+  .row {
+    margin-left: 28px;
+    content: "";
+    clear: both;
+    display: table;
+  }
+  /*hover over images */
+  .color img{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: all 1s ease;
+    }
+    
+    .color img:hover{
+    filter: grayscale(0%);
+    filter: gray;
+    -webkit-filter: grayscale(0%);
+    filter: none;
+    transition: 1s ease;
+    }
+  /*styling for the social media icons */
+.footer {
+  position: fixed;
+  text-align: center;
+  width: 50%;
+  bottom: 10px;
+  /*adding the social media icons to the right*/
+  right: 50px;
+}
+.socials {
+ font-family: 'Arial' ;
+ float: right;
+ padding: 10px;
+ font-size:  70px;
+ font-style: bold;
+ font-weight: 800;
+ text-align: center;
+ text-transform: capitalize;
+ color: 	#000000; 
+}
+
+  
