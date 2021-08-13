@@ -3,7 +3,6 @@ window.onload = () => {
     let root = document.getElementById('app');
 
     // router instance
-
     let Router = function(name, routes) {
         return {
             name, 
@@ -14,7 +13,7 @@ window.onload = () => {
     // create route instances
 let routerInstance = new Router('routerInstance', [
         {
-            path: '/',
+            path: 'index.html',
             name: "Home"
         },
         {
@@ -39,7 +38,7 @@ let currentPath = window.location.pathname;
             root.innerHTML = 'You are on the' + route.name + ' patHH';
         }
         else {
-            root.innerHTML = `This route is not defined`;
+            root.innerHTML = ``;
         }
     }
     //   grab all active attribute Routes
